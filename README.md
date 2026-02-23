@@ -36,7 +36,7 @@ The project consists of the following main files:
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/YOUR_GITHUB_USERNAME/DevPro-Showcase.git
+    git clone https://github.com/nidhi240562/DevPro-Showcase.git
     ```
 2.  Navigate to the project folder:
     ```bash
