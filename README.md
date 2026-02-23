@@ -4,7 +4,7 @@ This is a basic, responsive front-end website built to demonstrate my core web d
 
 ## 🚀 Live Demo
 
-[View Live Site on GitHub Pages] https://nidhi240562.github.io/DevPro-Showcase/) 
+View Live Site on GitHub Pages: https://nidhi240562.github.io/DevPro-Showcase/
 
 ## ✨ Features
 
