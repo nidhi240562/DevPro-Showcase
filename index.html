@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPro Showcase - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DevPro</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="ai-insights.html">AI Insights</a></li>
+                <li><a href="excel-tips.html">Excel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hi, I'm a B.VOC Software Development Student</h1>
+            <p>Passionate about coding, web technologies, and presenting technical concepts.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </section>
+
+        <section class="skills-summary">
+            <h2>Core Skills & Achievements</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>C, C++, Python, Java (Basics)</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & OS</h3>
+                    <p>VS Code, Windows, Excel</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Certifications</h3>
+                    <p>NASSCOM Web Developer (75.14%) <br> NASSCOM Test Engineer (74.68%) <br> SWAYAM: Web Based Tech</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-preview">
+            <h2>Featured Work</h2>
+            <div class="project-item">
+                <h3>Driving School Website</h3>
+                <p>A responsive front-end project with online registration and form validation, replacing manual processes. Built with HTML, CSS, and JavaScript.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Quick Contact (Form Validation Demo)</h2>
+            <form id="demoForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formFeedback" class="feedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 DevPro Showcase. Project for Resume.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
