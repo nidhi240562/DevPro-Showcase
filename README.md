@@ -4,7 +4,7 @@ This is a basic, responsive front-end website built to demonstrate my core web d
 
 ## 🚀 Live Demo
 
-[View Live Site on GitHub Pages](https://YOUR_GITHUB_USERNAME.github.io/DevPro-Showcase/) (Replace with your actual URL after deploying)
+View Live Site on GitHub Pages: https://nidhi240562.github.io/DevPro-Showcase/
 
 ## ✨ Features
 
@@ -32,17 +32,6 @@ The project consists of the following main files:
 - `script.js` - Contains the JavaScript code for form validation.
 - `README.md` - This file.
 
-## 🚀 How to Run Locally
-
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/nidhi240562/DevPro-Showcase.git
-    ```
-2.  Navigate to the project folder:
-    ```bash
-    cd DevPro-Showcase
-    ```
-3.  Open the `index.html` file in your web browser.
 
 ## 📌 Future Improvements
 
