@@ -21,7 +21,7 @@
     <main>
         <section class="hero">
             <h1>Hi, I'm a B.VOC Software Development Student</h1>
-            <p>Passionate about coding, web technologies, and presenting technical concepts.</p>
+                <p class="typing-text">I'm passionate about <span id="typed-text"></span><span class="cursor">|</span></p>
             <a href="#contact" class="cta-button">Get In Touch</a>
         </section>
 
@@ -46,6 +46,36 @@
                 </div>
             </div>
         </section>
+        <!-- Certifications Carousel -->
+<section class="certifications">
+    <h2><i class="fas fa-certificate"></i> My Certifications</h2>
+    <div class="carousel-container">
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="carousel-track">
+            <div class="cert-card">
+                <i class="fas fa-code"></i>
+                <h3>NASSCOM Web Developer</h3>
+                <p>Version 3.0 | NSQF Level 4</p>
+                <p class="score">Score: 75.14%</p>
+                <p class="date">Issued: May 2025</p>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-bug"></i>
+                <h3>NASSCOM Test Engineer</h3>
+                <p>Version 2.0 | NSQF Level 4</p>
+                <p class="score">Score: 74.68%</p>
+                <p class="date">Issued: Dec 2025</p>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-globe"></i>
+                <h3>SWAYAM (IGNOU)</h3>
+                <p>Web Based Technologies</p>
+                <p class="date">Multimedia Applications</p>
+            </div>
+        </div>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</section>
 
         <section class="projects-preview">
             <h2>Featured Work</h2>
@@ -73,9 +103,23 @@
     </main>
 
     <footer>
+    <div class="footer-content">
         <p>© 2025 DevPro Showcase. Project for Resume.</p>
-    </footer>
+        <div class="visitor-counter">
+            <i class="fas fa-eye"></i>
+            <span>Visitors: <span id="visitor-count">0</span></span>
+        </div>
+    </div>
+</footer>
 
     <script src="script.js"></script>
+<!-- GitHub Stats Section -->
+<section class="github-stats">
+    <h2><i class="fab fa-github"></i> My GitHub Activity</h2>
+    <div class="stats-container">
+        <img src="https://github-readme-stats.vercel.app/api?username=nidhi240562&show_icons=true&theme=radical" alt="GitHub Stats">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nidhi240562&layout=compact&theme=radical" alt="Top Languages">
+    </div>
+</section>
 </body>
 </html>

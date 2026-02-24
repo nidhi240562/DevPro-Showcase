@@ -222,3 +222,282 @@ footer {
     color: #bdc3c7;
     font-size: 0.9rem;
 }
+/* ===== DARK MODE STYLES ===== */
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #16213e;
+}
+
+body.dark-mode main {
+    background-color: #0f3460;
+    color: #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .hero {
+    background-color: #1a1a2e;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .skill-card {
+    background-color: #16213e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .project-item {
+    background-color: #16213e;
+    border-color: #0f3460;
+}
+
+body.dark-mode .contact-form input {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    border-color: #0f3460;
+}
+
+body.dark-mode footer {
+    background-color: #16213e;
+    color: #a0a0a0;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+body.dark-mode .dark-mode-toggle {
+    background: #f39c12;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background: #e67e22;
+}
+/* GitHub Stats */
+.github-stats {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.github-stats h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stats-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .github-stats h2 {
+    color: #e0e0e0;
+}/* Typing Effect */
+.typing-text {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    min-height: 60px;
+}
+
+#typed-text {
+    color: #3498db;
+    font-weight: 600;
+    background: rgba(52, 152, 219, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+/* Certifications Carousel */
+.certifications {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.certifications h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.cert-card {
+    min-width: 250px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+.cert-card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cert-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cert-card .score {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #fbbf24;
+}
+
+.cert-card .date {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.carousel-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.carousel-btn:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+body.dark-mode .certifications h2 {
+    color: #e0e0e0;
+}/* Footer with visitor counter */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.visitor-counter {
+    background: rgba(255,255,255,0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.visitor-counter i {
+    margin-right: 5px;
+    color: #fbbf24;
+}
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #3498db;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+}
+
+body.dark-mode .back-to-top {
+    background: #f39c12;
+}
+
+body.dark-mode .back-to-top:hover {
+    background: #e67e22;
+}

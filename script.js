@@ -45,5 +45,121 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('formFeedback').style.color = 'red';
             }
         });
+    }// ===== DARK MODE TOGGLE =====
+// Create dark mode button
+const darkModeBtn = document.createElement('button');
+darkModeBtn.className = 'dark-mode-toggle';
+darkModeBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+document.body.appendChild(darkModeBtn);
+
+// Check for saved preference
+if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    darkModeBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+}
+
+// Toggle dark mode
+darkModeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+        darkModeBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+    } else {
+        localStorage.setItem('darkMode', 'disabled');
+        darkModeBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
     }
+    // ===== TYPING EFFECT =====
+const words = ['Web Development', 'Programming', 'AI Technology', 'Data Analysis', 'Problem Solving'];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typedText = document.getElementById('typed-text');
+
+function typeEffect() {
+    const currentWord = words[wordIndex];
+    
+    if (isDeleting) {
+        typedText.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typedText.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+    }
+
+    if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 2000);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(typeEffect, 500);
+    } else {
+        setTimeout(typeEffect, isDeleting ? 50 : 100);
+    }
+}
+
+// Start typing effect
+if (document.getElementById('typed-text')) {
+    setTimeout(typeEffect, 1000);
+}
+// ===== CERTIFICATIONS CAROUSEL =====
+const track = document.querySelector('.carousel-track');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+if (track && prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+        track.scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
+    });
+
+    nextBtn.addEventListener('click', () => {
+        track.scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
+    });
+}
+// ===== VISITOR COUNTER =====
+function updateVisitorCounter() {
+    let count = localStorage.getItem('visitorCount');
+    
+    if (count) {
+        count = parseInt(count) + 1;
+    } else {
+        count = 1;
+    }
+    
+    localStorage.setItem('visitorCount', count);
+    document.getElementById('visitor-count').textContent = count;
+}
+
+// Update counter on page load
+updateVisitorCounter();
+// ===== BACK TO TOP BUTTON =====
+const backToTopBtn = document.createElement('button');
+backToTopBtn.className = 'back-to-top';
+backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+document.body.appendChild(backToTopBtn);
+
+// Show/hide button based on scroll
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+// Scroll to top on click
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+});
 });
